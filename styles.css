@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.b{
+    font-size: 70px;
+    color: #7f00ff;
+}
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navItems li:hover a
+.links a:hover{
+    color: #7f00ff;
+}
+.links a{
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.cols{
+    width: 50%;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+.h1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #3d535f;
+}
+.multiText{
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+.p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+.btns button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:solid #3d535f;
+    background: transparent;
+    color: #3d535f;
+    cursor: pointer;
+    position: flex;
+    overflow-wrap: normal;
+}
+.btns button:hover{
+    width: 38%;
+    color: #7f00ff;
+    border:solid #7f00ff;
+}
+.imgbox{
+    position: relative;
+    width: 75%;
+    height: 80%;
+}
+.imgbox img{
+    position: relative;
+    height: 85%;
+    width: calc(110% - 70px);
+    top: -90px;
+    right: 50px;
+    transform: rotateY(180deg);
+    animation: animateUser 4s linear infinite;
+}
+
+
+.imgbox #shape{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    transform: translate(-30%, -30%);
+    width: 100%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
